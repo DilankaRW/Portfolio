@@ -18,8 +18,10 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
 
+                    <!-- Close button for mini screen menu -->
                     <i class="icon" onclick="closemenu()"><img src="images/close.png" alt="img"></i>
                 </ul>
+                <!-- Menu button for mini screen menu -->
                 <i class="icon" onclick="openmenu()"><img src="images/menu.png" alt="img"></i>
             </nav>
             <div class="header-text">
@@ -35,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/dilanka.jpg" alt="image 1111">
+                    <img src="images/dilanka.jpg" alt="image">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -107,27 +109,27 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/web.png" alt="img111">
+                    <img src="images/web.png" alt="image">
                     <div class="layer">
                         <h3>Web</h3>
                         <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="eye"></i></a>
+                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/uiux.png" alt="img111">
+                    <img src="images/uiux.png" alt="image">
                     <div class="layer">
                         <h3>UI / UX</h3>
                         <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="eye"></i></a>
+                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/software.png" alt="img111">
+                    <img src="images/software.png" alt="image">
                     <div class="layer">
                         <h3>Software</h3>
                         <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="eye"></i></a>
+                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,6 +152,7 @@
                         <a href="#"><i><img src="images/linkedin.png" alt="social_icons"></i></a>
                         <a href="#"><i><img src="images/twitter.png" alt="social_icons"></i></a>
                     </div>
+                    <!-- PDF Download option -->
                     <a href="images/VIRUVO_POS.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
@@ -163,6 +166,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- -------------- copyright area ------------- -->
+
         <div class="copyright">
             <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | <a href="https://www.linkedin.com/in/dilankarw/">DilankaRW</a></p>
         </div>
@@ -170,6 +176,7 @@
 
     <!-- ----------------------------------------------------------------------------------------------------- -->
 
+    <!-- ---------------- Script for about area active link ---------------- -->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -185,6 +192,8 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+
+    <!-- ---------------- Script for Side Menu ---------------- -->
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
@@ -196,6 +205,7 @@
         }
     </script>
 
+    <!-- ---------------- Script for Submit Data & Google Sheet ---------------- -->
     <script>
         const scriptURL = 'Your Google sheet Link'
         const form = document.forms['submit-to-google-sheet']
