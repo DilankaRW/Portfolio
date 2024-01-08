@@ -84,20 +84,20 @@
                 <div>
                     <i><img src="images/web.png" alt="icon"></i>
                     <h2>Web Design</h2>
-                    <p>Expanding knowledge by working with modern technology.</p>
-                    <a href="#">Learn more</a>
+                    <p>Creating scalable engineering solutions with architectural backbone.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i><img src="images/uiux.png" alt="icon"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Expanding knowledge by working with modern technology.</p>
-                    <a href="#">Learn more</a>
+                    <p>I build stunning UI / UX that capture the users' imaginations.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i><img src="images/software.png" alt="icon"></i>
                     <h2>Software Design</h2>
-                    <p>Expanding knowledge by working with modern technology.</p>
-                    <a href="#">Learn more</a>
+                    <p>My full range of IT services is a one-stop solution for your business.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
         </div>
@@ -112,25 +112,25 @@
                 <div class="work">
                     <img src="images/Aloka_Travels.png" alt="image">
                     <div class="layer">
-                        <h3>Web</h3>
-                        <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
+                        <h3>Aloka Travels Web Project</h3>
+                        <p>Creating scalable engineering solutions with architectural backbone.</p>
+                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/POS_Software_UI.png" alt="image">
                     <div class="layer">
-                        <h3>UI / UX</h3>
-                        <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
+                        <h3>UI / UX for POS System</h3>
+                        <p>Stunning UI / UX that capture the users' imaginations.</p>
+                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/POS_Software.png" alt="image">
                     <div class="layer">
-                        <h3>Software</h3>
-                        <p>Expanding knowledge by working with modern technology.</p>
-                        <a href="#"><i><img src="images/view.png" alt="icon"></i></a>
+                        <h3>POS Software</h3>
+                        <p>Over 25+ businesses around Sri Lanka use this POS.</p>
+                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
 
     <!-- ---------------- Script for Submit Data & Google Sheet ---------------- -->
     <script>
-        const scriptURL = 'Your Google sheet Link'
+        const scriptURL = 'Your Google sheet > Web App URL'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
     
@@ -226,6 +226,49 @@
             .catch(error => console.error('Error!', error.message))
         })
     </script>
+
+    <!-- This Code For Google Sheet > Extensions > Apps Script > Code.gs -->
+
+    <!-- var sheetName = 'Sheet1'
+    var scriptProp = PropertiesService.getScriptProperties()
+    
+    function intialSetup () {
+      var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+      scriptProp.setProperty('key', activeSpreadsheet.getId())
+    }
+    
+    function doPost (e) {
+      var lock = LockService.getScriptLock()
+      lock.tryLock(10000)
+    
+      try {
+        var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+        var sheet = doc.getSheetByName(sheetName)
+    
+        var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+        var nextRow = sheet.getLastRow() + 1
+    
+        var newRow = headers.map(function(header) {
+          return header === 'timestamp' ? new Date() : e.parameter[header]
+        })
+    
+        sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+    
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+          .setMimeType(ContentService.MimeType.JSON)
+      }
+    
+      catch (e) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+          .setMimeType(ContentService.MimeType.JSON)
+      }
+    
+      finally {
+        lock.releaseLock()
+      }
+    } -->
 
 </body>
 </html>
