@@ -199,7 +199,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #0099ff;
+    background: #006786;
     transform: translateY(-10px);
 }
 
@@ -363,7 +363,7 @@ form .btn2{
 
 .copyright p a{
     text-decoration: none;
-    color: #fffb00;
+    color: #ffd900;
 }
 
 /* ----------------------------------------------------------------- */
