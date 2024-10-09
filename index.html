@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Basic Meta Tags -->
+    <!-- Basic SEO Tags: description, keywords, robots, and author define the core metadata for search engines. -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="boost your business with digital services."
+    />
+    <meta name="keywords" content="digital, software, website" />
+    <meta name="author" content="dilankarw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+
     <link rel="icon" href="images/D.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Dilanka</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo1.png" class="logo" alt="Logo Image">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+      <div class="container">
+        <nav>
+          <img src="images/logo1.png" class="logo" alt="Logo Image" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-                    <!-- Close button for mini screen menu -->
-                    <i class="icon" onclick="closemenu()"><img src="images/close.png" alt="img"></i>
-                </ul>
-                <!-- Menu button for mini screen menu -->
-                <i class="icon" onclick="openmenu()"><img src="images/menu.png" alt="img"></i>
-            </nav>
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hello!<br>I'm <span>Dilanka</span> Weerasinghe</h1>
-            </div>
+            <!-- Close button for mini screen menu -->
+            <i class="icon" onclick="closemenu()"
+              ><img src="images/close.png" alt="img"
+            /></i>
+          </ul>
+          <!-- Menu button for mini screen menu -->
+          <i class="icon" onclick="openmenu()"
+            ><img src="images/menu.png" alt="img"
+          /></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hello!<br />I'm <span>Dilanka</span> Weerasinghe</h1>
         </div>
+      </div>
     </div>
 
     <!-- -------------------------------------------about-------------------------------------------------- -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/dilanka.jpg" alt="image">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>As an software engineer with a strong academic foundation in computer science and programming, I am eager to contribute my skills and knowledge to a dynamic and innovative team. My passion for coding, coupled with my ability to quickly learn new technologies, makes me a valuable asset to any software development project.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/dilanka.jpg" alt="image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As an software engineer with a strong academic foundation in
+              computer science and programming, I am eager to contribute my
+              skills and knowledge to a dynamic and innovative team. My passion
+              for coding, coupled with my ability to quickly learn new
+              technologies, makes me a valuable asset to any software
+              development project.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br>Java | Python</li>
-                            <li><span>Web Development</span><br>HTML | CSS | JavaScript | PHP</li>
-                            <li><span>Frameworks</span><br>React | Spring Boot</li>
-                            <li><span>Database</span><br>MySQL | MongoDB</li>
-                            <li><span>Version Controlling</span><br>GITHUB</li>
-                            <li><span>Other</span><br>Jupyter Notebook | Google Colab</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2018 - Present</span><br>Freelance Software Developer | VIRUVO<br><br>Creating business management software and websites based on customer needs is a process that involves understanding the unique requirements of each individual customer and developing customized solutions that address those needs. It often involves a collaborative approach, with other developers working closely with clients to identify their specific needs and requirements.</li>
-                            <li><span>2022 - Present</span><br>Freelance Software Developer | Inner Creations Pvt Ltd.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022 - 2023</span><br>BSc (Hons) Software Engineering<br>Cardiff Metropolitan University @ ICBT</li>
-                            <li><span>2019 - 2021</span><br>Professional Diploma in software Engineering - SCQF Level 7<br>Java Institute for Advanced Technology</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br />Java | Python</li>
+                <li>
+                  <span>Web Development</span><br />HTML | CSS | JavaScript |
+                  PHP
+                </li>
+                <li><span>Frameworks</span><br />React | Spring Boot</li>
+                <li><span>Database</span><br />MySQL | MongoDB</li>
+                <li><span>Version Controlling</span><br />GITHUB</li>
+                <li><span>Other</span><br />Jupyter Notebook | Google Colab</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2018 - Present</span><br />Freelance Software Developer
+                  | VIRUVO<br /><br />Creating business management software and
+                  websites based on customer needs is a process that involves
+                  understanding the unique requirements of each individual
+                  customer and developing customized solutions that address
+                  those needs. It often involves a collaborative approach, with
+                  other developers working closely with clients to identify
+                  their specific needs and requirements.
+                </li>
+                <li>
+                  <span>2022 - Present</span><br />Freelance Software Developer
+                  | Inner Creations Pvt Ltd.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - 2023</span><br />BSc (Hons) Software
+                  Engineering<br />Cardiff Metropolitan University @ ICBT
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Professional Diploma in software
+                  Engineering - SCQF Level 7<br />Java Institute for Advanced
+                  Technology
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ----------------------------------------------Services--------------------------------------------- -->
@@ -102,142 +154,202 @@
         </div>
     </div> -->
 
-        <!-- ----------------------------------------------------------------------------------------------------- -->
+    <!-- ----------------------------------------------------------------------------------------------------- -->
 
-        <div class="wrapper">
-            <i id="left"><img src="images/left.png" alt="left"></i>
-            <ul class="carousel">
-                <li class="card">
-                    <div class="img"><img src="images/web.png" alt="img" draggable="false"></div>
-                    <h2>Web Design</h2>
-                    <span>Creating scalable engineering solutions with architectural backbone.</span>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="images/uiux.png" alt="img" draggable="false"></div>
-                    <h2>UI / UX Design</h2>
-                    <span>I build stunning UI / UX that capture the users' imaginations.</span>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="images/software.png" alt="img" draggable="false"></div>
-                    <h2>Software Design</h2>
-                    <span>My full range of IT services is a one-stop solution for your business.</span>
-                </li>
-            </ul>
-            <i id="right"><img src="images/right.png" alt="right"></i>
-        </div>
+    <div class="wrapper">
+      <i id="left"><img src="images/left.png" alt="left" /></i>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img">
+            <img src="images/web.png" alt="img" draggable="false" />
+          </div>
+          <h2>Web Design</h2>
+          <span
+            >Creating scalable engineering solutions with architectural
+            backbone.</span
+          >
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/uiux.png" alt="img" draggable="false" />
+          </div>
+          <h2>UI / UX Design</h2>
+          <span
+            >I build stunning UI / UX that capture the users'
+            imaginations.</span
+          >
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/software.png" alt="img" draggable="false" />
+          </div>
+          <h2>Software Design</h2>
+          <span
+            >My full range of IT services is a one-stop solution for your
+            business.</span
+          >
+        </li>
+      </ul>
+      <i id="right"><img src="images/right.png" alt="right" /></i>
+    </div>
 
     <!-- ----------------------------------------------My Work----------------------------------------------- -->
 
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/Aloka_Travels.png" alt="image">
-                    <div class="layer">
-                        <h3>Aloka Travels Web Project</h3>
-                        <p>Creating scalable engineering solutions with architectural backbone.</p>
-                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/POS_Software_UI.png" alt="image">
-                    <div class="layer">
-                        <h3>UI / UX for POS System</h3>
-                        <p>Stunning UI / UX that capture the users' imaginations.</p>
-                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/POS_Software.png" alt="image">
-                    <div class="layer">
-                        <h3>POS Software</h3>
-                        <p>Over 25+ businesses around Sri Lanka use this POS.</p>
-                        <a href="https://www.viruvo.com/"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Smart_Warehouse.png" alt="image">
-                    <div class="layer">
-                        <h3>Smart Warehouse</h3>
-                        <p>Warehouse management system</p>
-                        <a href="https://github.com/DilankaRW"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Travel_Web.png" alt="image">
-                    <div class="layer">
-                        <h3>Travel Website</h3>
-                        <p>Travel Website Project</p>
-                        <a href="https://github.com/DilankaRW/Travel-Web"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/TastyTrack.png" alt="image">
-                    <div class="layer">
-                        <h3>TastyTrack Order System</h3>
-                        <p>Food Ordering System</p>
-                        <a href="https://github.com/DilankaRW/TastyTrack-Order-System"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/GemProphet.png" alt="image">
-                    <div class="layer">
-                        <h3>GemProphet</h3>
-                        <p>AI gem price prediction system</p>
-                        <a href="https://github.com/DilankaRW/GemProphet"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Weather-WebApp.png" alt="image">
-                    <div class="layer">
-                        <h3>Weather WebApp</h3>
-                        <p>Practice Project</p>
-                        <a href="https://github.com/DilankaRW"><i><img src="images/view.png" alt="icon"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Aloka_Travels.png" alt="image" />
+            <div class="layer">
+              <h3>Aloka Travels Web Project</h3>
+              <p>
+                Creating scalable engineering solutions with architectural
+                backbone.
+              </p>
+              <a href="https://www.viruvo.com/"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
             </div>
-            <!-- <a href="#" class="btn btn1">See more</a> -->
+          </div>
+          <div class="work">
+            <img src="images/POS_Software_UI.png" alt="image" />
+            <div class="layer">
+              <h3>UI / UX for POS System</h3>
+              <p>Stunning UI / UX that capture the users' imaginations.</p>
+              <a href="https://www.viruvo.com/"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/POS_Software.png" alt="image" />
+            <div class="layer">
+              <h3>POS Software</h3>
+              <p>Over 25+ businesses around Sri Lanka use this POS.</p>
+              <a href="https://www.viruvo.com/"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Smart_Warehouse.png" alt="image" />
+            <div class="layer">
+              <h3>Smart Warehouse</h3>
+              <p>Warehouse management system</p>
+              <a href="https://github.com/DilankaRW"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Travel_Web.png" alt="image" />
+            <div class="layer">
+              <h3>Travel Website</h3>
+              <p>Travel Website Project</p>
+              <a href="https://github.com/DilankaRW/Travel-Web"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/TastyTrack.png" alt="image" />
+            <div class="layer">
+              <h3>TastyTrack Order System</h3>
+              <p>Food Ordering System</p>
+              <a href="https://github.com/DilankaRW/TastyTrack-Order-System"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/GemProphet.png" alt="image" />
+            <div class="layer">
+              <h3>GemProphet</h3>
+              <p>AI gem price prediction system</p>
+              <a href="https://github.com/DilankaRW/GemProphet"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Weather-WebApp.png" alt="image" />
+            <div class="layer">
+              <h3>Weather WebApp</h3>
+              <p>Practice Project</p>
+              <a href="https://github.com/DilankaRW"
+                ><i><img src="images/view.png" alt="icon" /></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <!-- <a href="#" class="btn btn1">See more</a> -->
+      </div>
     </div>
 
     <!-- ------------------------------------------Contact------------------------------------------------ -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i><img src="images/mail.png" alt="mail"></i>dilankarashmika10@gmail.com</p>
-                    <p><i><img src="images/phone.png" alt="phone"></i>+94**********</p>
-                    <div class="social-icons">
-                        <!-- <a href="#"><i><img src="images/facebook.png" alt="social_icons"></i></a> -->
-                        <!-- <a href="#"><i><img src="images/instagram.png" alt="social_icons"></i></a> -->
-                        <a href="https://www.linkedin.com/in/dilankarw/"><i><img src="images/linkedin.png" alt="social_icons"></i></a>
-                        <a href="https://www.facebook.com/dilankarw/"><i><img src="images/twitter.png" alt="social_icons"></i></a>
-                    </div>
-                    <!-- PDF Download option -->
-                    <a href="images/Dilanka_CV.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i><img src="images/mail.png" alt="mail" /></i
+              >dilankarashmika10@gmail.com
+            </p>
+            <p>
+              <i><img src="images/phone.png" alt="phone" /></i>+94**********
+            </p>
+            <div class="social-icons">
+              <!-- <a href="#"><i><img src="images/facebook.png" alt="social_icons"></i></a> -->
+              <!-- <a href="#"><i><img src="images/instagram.png" alt="social_icons"></i></a> -->
+              <a href="https://www.linkedin.com/in/dilankarw/"
+                ><i><img src="images/linkedin.png" alt="social_icons" /></i
+              ></a>
+              <a href="https://www.facebook.com/dilankarw/"
+                ><i><img src="images/twitter.png" alt="social_icons" /></i
+              ></a>
             </div>
+            <!-- PDF Download option -->
+            <a href="images/Dilanka_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
 
-        <!-- -------------- copyright area ------------- -->
+      <!-- -------------- copyright area ------------- -->
 
-        <div class="copyright">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | <a href="https://www.linkedin.com/in/dilankarw/">DilankaRW</a></p>
-        </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All Rights Reserved |
+          <a href="https://www.linkedin.com/in/dilankarw/">DilankaRW</a>
+        </p>
+      </div>
     </div>
-
 
     <!-- This Code For Google Sheet > Extensions > Apps Script > Code.gs -->
 
@@ -281,7 +393,5 @@
         lock.releaseLock()
       }
     } -->
-
-
-</body>
+  </body>
 </html>
